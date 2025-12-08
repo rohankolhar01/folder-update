@@ -1,1 +1,0 @@
-import os\nfrom pydantic import BaseSettings\n\nclass Settings(BaseSettings):\n    PROJECT_NAME: str = 'Advanced FastAPI'\n    SECRET_KEY: str = 'supersecret'\n    DATABASE_URL: str = 'sqlite:///./app.db'\n\n    class Config:\n        env_file = '.env'\n\nsettings = Settings()

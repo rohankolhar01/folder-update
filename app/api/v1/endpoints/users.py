@@ -1,1 +1,0 @@
-from fastapi import APIRouter, Depends\n\nrouter = APIRouter()\n\n@router.get('/')\ndef get_users():\n    return {'users': ['Alice', 'Bob', 'Charlie']}

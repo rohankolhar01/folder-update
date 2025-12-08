@@ -1,1 +1,0 @@
-from fastapi import APIRouter\n\nrouter = APIRouter()\n\n@router.post('/login')\ndef login():\n    return {'message': 'User logged in'}
