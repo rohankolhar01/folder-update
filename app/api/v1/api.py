@@ -1,0 +1,1 @@
+from fastapi import APIRouter\nfrom app.api.v1.endpoints import users, auth\n\nrouter = APIRouter()\n\nrouter.include_router(users.router, prefix='/users', tags=['Users'])\nrouter.include_router(auth.router, prefix='/auth', tags=['Auth'])
